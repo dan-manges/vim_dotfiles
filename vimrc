@@ -61,6 +61,8 @@ autocmd BufNewFile,BufRead *.txt setlocal textwidth=78
 
 autocmd FileType ruby runtime ruby_mappings.vim
 
+autocmd BufNewFile,BufRead *.html.hbs setlocal filetype=html
+
 if version >= 700
     autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en_us
     autocmd FileType tex setlocal spell spelllang=en_us
