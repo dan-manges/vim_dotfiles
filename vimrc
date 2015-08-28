@@ -46,6 +46,8 @@ au FileType diff colorscheme desert
 au FileType git colorscheme desert
 au BufWinLeave * colorscheme Tomorrow-Night
 
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
 augroup markdown
   au!
   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
